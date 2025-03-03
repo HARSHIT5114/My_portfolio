@@ -12,7 +12,7 @@
   top: 0; /* Fix it at the top */
   left: 0;
   width: 100%; /* Ensure it spans the full width */
-  z-index: 10; /* Ensure it's above other content */
+  z-index: 1; /* Ensure it's above other content */
 }
 
 .navbar-container {
@@ -34,11 +34,10 @@
   gap: 5px;
 }
 
-.bar {
-  width: 30px;
-  height: 5px;
-  background: yellow;
-  transition: all 0.3s ease-in-out;
+.svg {
+  position: fixed;
+  top: 15px;
+  right: 10px;
   z-index: 11;
 }
 
