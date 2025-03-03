@@ -1,13 +1,19 @@
 import './App.css'
-import Contact from './components/Contact'
-import MainPage from './components/MainPage'
+import Navbar from './components/Navbar/Navbar'
+import HeroSection from './components/sections/HeroSection/HeroSection'
+import About from './components/sections/About/About'
+import ContactSection from './components/sections/ContactSection/ContactSection'
+import ProjectSection from './components/sections/Projects/ProjectSection'
 
 function App() {
 
   return (
     <div>
-      <Contact />
-      <MainPage />
+      <Navbar />
+      <HeroSection />
+      <About/>
+      <ContactSection/>
+      <ProjectSection/>
     </div>
   )
 }

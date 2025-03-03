@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.navbar {
+  background-color: black;
+  color: yellow;
+  padding: 15px;
+  font-family: 'Press Start 2P', cursive;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed; /* Change from relative to fixed */
+  top: 0; /* Fix it at the top */
+  left: 0;
+  width: 100%; /* Ensure it spans the full width */
+  z-index: 10; /* Ensure it's above other content */
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.bar {
+  width: 30px;
+  height: 5px;
+  background: yellow;
+  transition: all 0.3s ease-in-out;
+  z-index: 11;
+}
+
+/* Animated Hamburger */
+.hamburger.open .bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger.open .bar:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100vh;
+  background: black;
+  border-left: 4px solid yellow;
+  padding-top: 50px;
+  transition: right 0.3s ease-in-out;
+}
+
+.sidebar.show {
+  right: 0;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-item {
+  padding: 20px;
+  color: yellow;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar-item:hover {
+  color: orange;
+  text-shadow: 0 0 8px yellow;
+}
