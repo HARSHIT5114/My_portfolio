@@ -36,7 +36,7 @@ const Navbar = () => {
           {items.map((section, idx) => (
             <li key={idx}>
               <a
-                href={`#${section}`}
+                href={`#${section.replace(/[\s👾🕹🎮📟]/g, '')}`}
                 className="sidebar-item"
                 onClick={e => {
                   e.preventDefault();
