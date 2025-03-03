@@ -14,33 +14,18 @@ const Navbar = () => {
           className={`hamburger ${isOpen ? 'open' : ''}`}
           onClick={() => setIsOpen(!isOpen)}
         >
-          <svg width="23" height="23" viewBox="0 0 23 23" className='svg'>
+          <svg width="50" height="24" viewBox="0 0 50 24">
             <motion.path
+              fill="none"
               strokeWidth="3"
               stroke="yellow"
               strokeLinecap="round"
-              d="M 2 6 L 21 6" // This creates the top line
+              strokeLinejoin="round"
               initial={false}
               animate={
-                isOpen ? { d: 'M 3 16.5 L 20 3' } : { d: 'M 2 6 L 21 6' }
-              }
-            />
-            <motion.path
-              strokeWidth="3"
-              stroke="yellow"
-              strokeLinecap="round"
-              d="M 2 12 L 21 12" // This creates the middle line
-              initial={false}
-              animate={isOpen ? { opacity: 0 } : { opacity: 1 }}
-            />
-            <motion.path
-              strokeWidth="3"
-              stroke="yellow"
-              strokeLinecap="round"
-              d="M 2 18 L 21 18" // This creates the bottom line
-              initial={false}
-              animate={
-                isOpen ? { d: 'M 3 3 L 20 16.5' } : { d: 'M 2 18 L 21 18' }
+                isOpen
+                  ? { d: 'M5 12h35M30 5l12 7-12 7' } // Longer arrow with an elegant head
+                  : { d: 'M45 12H10M20 5l-12 7 12 7' } // Clean reverse animation
               }
             />
           </svg>
