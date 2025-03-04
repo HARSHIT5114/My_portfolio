@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.about-me {
+  background: #121212;
+  color: #00ffcc;
+  text-align: center;
+  padding: 50px 20px;
+  font-family: 'Press Start 2P', cursive;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me .container {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.tetris-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-me h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  position: relative;
+  color: yellow;
+  margin-bottom: 30px;
+}
+
+.about-me h1::before {
+    content: attr(data-text);
+    position: absolute;
+    left: 0px;
+    text-shadow: 2px 0 #ff00ff;
+    animation: glitch 0.3s infinite alternate;
+  }
+
+.about-text {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  color: yellow;
+  text-align: left;
+}
+
+.btn-back {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: black;
+  background: yellow;
+  border: 3px solid black;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-back:hover {
+  background: black;
+  color: yellow;
+  border: 3px solid yellow;
+  box-shadow: 0 0 10px yellow;
+}
+
+@keyframes glitch {
+  0% { transform: translateX(-2px); }
+  100% { transform: translateX(2px); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -3,6 +3,7 @@
 .navbar {
   background-color: black;
   color: yellow;
+  border-bottom: 4px solid yellow;
   padding: 15px;
   font-family: 'Press Start 2P', cursive;
   display: flex;
@@ -87,4 +88,20 @@
 .sidebar-item:hover {
   color: orange;
   text-shadow: 0 0 8px yellow;
+}
+
+/* Pixelated Image Section */
+.pixelated-frame {
+  margin: 20px 0;
+  padding: 10px;
+  border: 4px solid yellow;
+  background: black;
+  display: inline-block;
+}
+
+.pixelated-image {
+  width: 150px;
+  height: 150px;
+  image-rendering: pixelated; 
+  border-radius: 5px;
 }

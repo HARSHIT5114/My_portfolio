@@ -1,0 +1,51 @@
+.tetris-container {
+  display: flex;
+  flex-direction: column;
+  background: #000;
+  border: 4px solid #FFD700;
+  box-shadow: 
+    0 0 10px #FFD700,
+    inset 0 0 15px #FFD700;
+  width: 250px;
+  height: 593px;
+  overflow: visible;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  width: 25px;
+  height: 25px;
+  background: #222;
+  border: 1px solid #444;
+  transition: background-color 0.1s ease;
+}
+
+.cell.filled {
+  background: #FFD700;
+  /* box-shadow: 
+    0 0 5px #FFD700,
+    inset 0 0 3px #FFF;
+  border-color: #FFA500; */
+}
+
+/* CRT-like scanline effect */
+.tetris-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    repeating-linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.15),
+      rgba(0, 0, 0, 0.15) 1px,
+      transparent 1px,
+      transparent 2px
+    );
+  pointer-events: none;
+}
