@@ -9,7 +9,17 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <div className="navbar-logo">MEGH</div>
+        <div
+          className="navbar-logo"
+          onClick={e => {
+            e.preventDefault();
+            document
+              .getElementById('Home')
+              .scrollIntoView({ behavior: 'smooth' });
+          }}
+        >
+          MEGH
+        </div>
         <div
           className={`hamburger ${isOpen ? 'open' : ''}`}
           onClick={() => setIsOpen(!isOpen)}

@@ -6,7 +6,7 @@
   text-align: center;
   padding: 50px 20px;
   font-family: 'Press Start 2P', cursive;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
