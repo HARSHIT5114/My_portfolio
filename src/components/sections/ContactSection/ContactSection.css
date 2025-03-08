@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.contact-me {
+  background: #121212;
+  color: yellow;
+  text-align: center;
+  padding: 50px 20px;
+  font-family: 'Press Start 2P', cursive;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-me .container {
+  max-width: 800px;
+  margin: auto;
+  padding: 30px;
+  border: 2px solid yellow;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px yellow;
+}
+
+.contact-me h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    position: relative;
+    color: yellow;
+}
+
+.contact-me h1::before {
+    content: attr(data-text);
+    position: absolute;
+    left: 0px;
+    text-shadow: 2px 0 #ff00ff;
+    /* animation: glitch 0.3s infinite alternate; */
+}
+
+.contact-text {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-top: 20px;
+}
+
+.contact-info {
+  margin-top: 20px;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.contact-info a {
+  color: yellow;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+}
+
+.contact-form {
+  margin-top: 20px;
+}
+
+.contact-form textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  font-family: 'Press Start 2P', cursive;
+  border: 2px solid yellow;
+  background: #121212;
+  color: yellow;
+  outline: none;
+  resize: none;
+}
+
+.btn-contact {
+  display: inline-block;
+  font-family: 'Press Start 2P', cursive;
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #121212;
+  background: yellow;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.btn-contact:hover {
+  transform: scale(1.1);
+}
+
+@keyframes glitch {
+  0% { transform: translateX(-2px); }
+  100% { transform: translateX(2px); }
+}
+
+
