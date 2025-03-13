@@ -1,10 +1,13 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React, { useRef } from 'react';
+import { motion, useInView } from 'framer-motion';
 import './herosection.css';
 
 const HeroSection = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: false }); // Triggers animation every time it enters the viewport
+
   return (
-    <section className="hero">
+    <section className="hero" ref={ref}>
       <div className="outer-container">
         {/* Pixelated Image Section */}
         {/* <motion.div
@@ -22,37 +25,41 @@ const HeroSection = () => {
 
         {/* Name and project redirector - sub section */}
         <div className="container">
+          {/* Heading animation */}
           <motion.h1
             className="glitch"
             data-text="WELCOME"
             initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
+            animate={
+              isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }
+            }
             transition={{ duration: 1 }}
           >
             WELCOME
           </motion.h1>
 
+          {/* Subtext animation */}
           <motion.p
             className="subtext"
             initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
+            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
             transition={{ delay: 0.5, duration: 0.8 }}
           >
             To Megh's portfolio
           </motion.p>
 
+          {/* Projects button */}
           <motion.a
             className="btn-start"
-            href='Projects'
+            href="Projects"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            onClick={(e) => {
+            onClick={e => {
               e.preventDefault();
-                  document
-                    .getElementById('Projects')
-                    .scrollIntoView({ behavior: 'smooth' });
-            }
-            }
+              document
+                .getElementById('Projects')
+                ?.scrollIntoView({ behavior: 'smooth' });
+            }}
           >
             🎮 Projects
           </motion.a>
