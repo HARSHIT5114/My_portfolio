@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { motion, useInView, AnimatePresence, delay } from 'framer-motion';
 import projects from './projects';
 import './ProjectSection.css';
@@ -8,7 +8,17 @@ const ProjectSection = () => {
   const isInView = useInView(ref, { margin: '-10% 0px', once: false });
   const [selectedProject, setSelectedProject] = useState(null);
   const [page, setPage] = useState(0);
-  const projectsPerPage = 9; // 3x3 grid
+  const [projectsPerPage, setProjectsPerPage] = useState(9); // Default to 9
+
+  // Handle responsive project count
+  useEffect(() => {
+    const updateProjectsPerPage = () => {
+      setProjectsPerPage(window.innerWidth < 768 ? 4 : 9);
+    };
+    updateProjectsPerPage(); // Set initial value
+    window.addEventListener('resize', updateProjectsPerPage);
+    return () => window.removeEventListener('resize', updateProjectsPerPage);
+  }, []);
 
   const totalPages = Math.ceil(projects.length / projectsPerPage);
 
@@ -122,7 +132,10 @@ const ProjectSection = () => {
               <div className="project-details">
                 <ul>
                   {selectedProject.details.map((point, index) => (
+                    <>
                     <li key={index}>🔹 {point}</li>
+                    <br />
+                    </>
                   ))}
                 </ul>
                 {selectedProject.link && (

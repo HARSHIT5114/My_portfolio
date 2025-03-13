@@ -99,4 +99,15 @@
   100% { transform: translateX(2px); }
 }
 
+@media (max-width: 768px) {
+  .contact-info{
+    font-size: 0.8rem;
+  }
+
+  .contact-form textarea{
+    width: 90%;
+  }
+
+}
+
 

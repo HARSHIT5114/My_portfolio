@@ -18,7 +18,8 @@ const Navbar = () => {
               .scrollIntoView({ behavior: 'smooth' });
           }}
         >
-          MEGH
+          <span className="large-logo">MEGH</span>
+          <span className="small-logo">M</span>
         </div>
         <div
           className={`hamburger ${isOpen ? 'open' : ''}`}

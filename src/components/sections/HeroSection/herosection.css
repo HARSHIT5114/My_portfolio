@@ -233,3 +233,13 @@
     object-fit: cover; /* Ensures it covers the area without distortion */
 }
 
+@media (max-width: 768px) {
+  .glitch{
+    font-size: 3rem;
+  }
+
+  .subtext{
+    font-size: 1rem;
+  }
+}
+

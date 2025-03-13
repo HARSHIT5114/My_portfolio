@@ -48,7 +48,7 @@ const ContactSection = () => {
         >
           <p>
             📧 Email:{' '}
-            <a href="mailto:megh.p.professional@gmail.com">
+            <a href="mailto:megh.p.professional@gmail.com" id='email'>
               megh.p.professional@gmail.com
             </a>
           </p>
@@ -70,7 +70,7 @@ const ContactSection = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              LinkedIn
+              {' '}LinkedIn
             </a>
           </p>
         </motion.div>
