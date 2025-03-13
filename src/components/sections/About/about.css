@@ -114,4 +114,8 @@
     font-size: 0.875rem;
     padding: 8px 16px;
   }
+
+  .text-column{
+    padding: 40px 0px;
+  }
 }
