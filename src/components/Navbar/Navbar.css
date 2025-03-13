@@ -120,8 +120,4 @@
   .small-logo{
     display: block;
   }
-
-  *{
-    overflow-x: hidden;
-  }
 }
