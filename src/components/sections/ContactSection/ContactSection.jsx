@@ -52,9 +52,11 @@ const ContactSection = () => {
               megh.p.professional@gmail.com
             </a>
           </p>
+          <br />
           <p>
             📞 Phone: <a href="tel:+1234567890">+91 9824066186</a>
           </p>
+          <br />
           <p>
             🔗{' '}
             <a
