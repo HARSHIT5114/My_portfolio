@@ -4,21 +4,19 @@
   background: #121212;
   color: yellow;
   text-align: center;
-  padding: 50px 20px;
   font-family: 'Press Start 2P', cursive;
-  height: 90vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .contact-me .container {
-  max-width: 800px;
-  margin: auto;
   padding: 30px;
   border: 2px solid yellow;
   border-radius: 10px;
   box-shadow: 0px 0px 10px yellow;
+  width: 78%;
 }
 
 .contact-me h1 {
