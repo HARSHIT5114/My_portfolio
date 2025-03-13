@@ -29,7 +29,10 @@
 .project-card {
   padding: 20px;
   border: 2px solid yellow;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.3;
   cursor: pointer;
   box-shadow: 0 0 10px yellow;
   background: #121212;
@@ -79,13 +82,20 @@
 .modal-content {
   background: black;
   color: yellow;
+  margin: 40px;
   padding: 40px;
   border: 2px solid yellow;
   box-shadow: 0 0 15px yellow;
-  text-align: center;
-  max-width: 500px;
+  text-align: left;
+  /* max-width: 600px; */
+  line-height: 1.3;
   border-radius: 10px;
   position: relative;
+}
+
+.heading{
+  text-transform: uppercase;
+  text-decoration: underline;
 }
 
 .project-details {

@@ -150,7 +150,7 @@ const ProjectSection = () => {
       {selectedProject && (
         <div className="project-modal" onClick={() => setSelectedProject(null)}>
           <div className="modal-content" onClick={e => e.stopPropagation()}>
-            <h2>{selectedProject.title}</h2>
+            <h2 className='heading'>{selectedProject.title}</h2>
             <div className="project-details">
               <ul>
                 {selectedProject.details.map((point, index) => (
