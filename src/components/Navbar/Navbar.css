@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
+*{
+  overflow-x: hidden;
+}
+
 .navbar {
   background-color: black;
   color: yellow;
@@ -12,14 +16,14 @@
   position: fixed; /* Change from relative to fixed */
   top: 0; /* Fix it at the top */
   left: 0;
-  width: 100%; /* Ensure it spans the full width */
+  width: 100vw; /* Ensure it spans the full width */
   z-index: 1; /* Ensure it's above other content */
 }
 
 .navbar-container {
   display: flex;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   justify-content: space-between;
 }
 
@@ -30,16 +34,16 @@
 }
 
 .hamburger {
-  position: fixed; /* Fixes the button in place */
+  position: fixed; 
   top: 15px;
-  right: 0px; /* Default position */
+  right: 0px; 
   z-index: 11;
   transition: right 0.3s ease-in-out;
   cursor: pointer;
 }
 
 .hamburger.open {
-  right: 205px; /* Moves with the sidebar */
+  right: 205px; 
 }
 
 /* Animated Hamburger */
@@ -105,4 +109,18 @@
   height: 150px;
   image-rendering: pixelated; 
   border-radius: 5px;
+}
+
+.small-logo{
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .large-logo{
+    display: none;
+  }
+
+  .small-logo{
+    display: block;
+  }
 }
