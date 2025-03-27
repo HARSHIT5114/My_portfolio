@@ -19,7 +19,7 @@ const Navbar = () => {
           }}
         >
           <span className="large-logo">HARSHIT</span>
-          <span className="small-logo">M</span>
+          <span className="small-logo">HR</span>
         </div>
         <div
           className={`hamburger ${isOpen ? 'open' : ''}`}
