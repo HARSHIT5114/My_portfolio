@@ -18,7 +18,7 @@ const Navbar = () => {
               .scrollIntoView({ behavior: 'smooth' });
           }}
         >
-          <span className="large-logo">MEGH</span>
+          <span className="large-logo">HARSHIT</span>
           <span className="small-logo">M</span>
         </div>
         <div

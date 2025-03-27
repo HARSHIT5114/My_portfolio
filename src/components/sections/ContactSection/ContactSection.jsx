@@ -48,19 +48,19 @@ const ContactSection = () => {
         >
           <p>
             📧 Email:{' '}
-            <a href="mailto:megh.p.professional@gmail.com" id='email'>
-              megh.p.professional@gmail.com
+            <a href="mailto:harshitrajput.professional@gmail.com" id='email'>
+            harshitrajput.professional@gmail.com
             </a>
           </p>
           <br />
           <p>
-            📞 Phone: <a href="tel:+1234567890">+91 9824066186</a>
+            📞 Phone: <a href="tel:+1234567890">+91 9925011915</a>
           </p>
           <br />
           <p>
             🔗{' '}
             <a
-              href="https://github.com/Meghhhhh"
+              href="https://github.com/HARSHIT5114"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -68,7 +68,7 @@ const ContactSection = () => {
             </a>{' '}
             |
             <a
-              href="https://www.linkedin.com/in/megh-prajapati-ab13a82b3/"
+              href="https://www.linkedin.com/in/harshit-rajput-268132250/"
               target="_blank"
               rel="noopener noreferrer"
             >

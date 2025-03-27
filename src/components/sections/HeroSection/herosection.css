@@ -154,13 +154,13 @@
   }
   
   .glitch::before {
-    color: purple;
+    color: blue;
     opacity: 0.65;
     animation-delay: 0.05s; 
   }
   
   .glitch::after {
-    color: cyan;
+    color: #ff0000;
     opacity: 0.65;
     animation-delay: 0.1s;
   }

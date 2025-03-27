@@ -45,7 +45,7 @@ const HeroSection = () => {
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
             transition={{ delay: 0.5, duration: 0.8 }}
           >
-            To Megh's portfolio
+            To Harshit's portfolio
           </motion.p>
 
           {/* Projects button */}

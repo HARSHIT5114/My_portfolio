@@ -57,8 +57,7 @@ const About = () => {
               interviews. <br />
               <br />• Strong problem-solving, teamwork, and performance
               optimization skills. <br />
-              <br />• Secured 1st place in college internal hackathon, qualified
-              for Smart India Hackathon 2024.
+              
             </motion.p>
 
             {/* Back to Home Button */}
