@@ -9,6 +9,6 @@ export default defineConfig({
     host: "0.0.0.0", // Allow external access
   },
   preview: {
-    allowedHosts: ['meghs-portfolio.onrender.com'],
+    allowedHosts: ['https://harshit-portfolio-p8ht.onrender.com'],
   }
 });
