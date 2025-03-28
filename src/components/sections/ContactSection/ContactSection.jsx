@@ -9,7 +9,7 @@ const ContactSection = () => {
   function sendEmail(event) {
     event.preventDefault();
     const message = document.getElementById('message').value;
-    window.location.href = `mailto:megh.p.professional@gmail.com?subject=Contact&body=${encodeURIComponent(
+    window.location.href = `mailto:harshitrajput.professional@gmail.com?subject=Contact&body=${encodeURIComponent(
       message,
     )}`;
   }
